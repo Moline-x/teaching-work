@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<link rel="stylesheet" href="css/teach.css" />
+		
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+
+		<script type="text/javascript" src="js/skill.js"></script>
+		<script type="text/javascript" src="layer/layer.js" ></script>
+
+		<script>
+			$(function() {
+				$("#datepicker1").datepicker();
+				$("#datepicker2").datepicker();
+			});
+		</script>
+		<script>
+			$(function() {
+				$("input[type=button]")
+					.button()
+					.click(function(event) {
+						event.preventDefault();
+					});
+			});
+		</script>
+
+		<title></title>
+	</head>
+
+	<body >
+		<div id="div1">
+			<p>教育经历</p>
+		</div>
+			
+		<div id="div2">
+
+			<div id="showData" style="height: 280px; overflow-y:scroll">
+
+			</div>
+			<input type="button" value="添加教育经历" id="btn1" size="50" style="font-family: '微软雅黑';float: right;" onclick="addData()" />
+			<form action="">
+
+				<table width="700px">
+					<tr>
+						<td>
+							<font color="red">*</font>就读学校</td>
+						<td><input type="text" placeholder="请输入就读学校" id="txt1"></td>
+					</tr>
+					<tr>
+						<td>
+							<font color="red">*</font>入学时间</td>
+						<td><input type="text" placeholder="选择日期" id="datepicker1" class="txt2"></td>
+						<td>
+							<font color="red">*</font>毕业时间</td>
+						<td><input type="text" placeholder="选择日期" id="datepicker2" class="txt3"></td>
+					</tr>
+					<tr>
+						<td>
+							<font color="red">*</font>获得学历</td>
+						<td>
+							<select style="height: 30px; width: 180px;" id="sel1">
+								<optgroup data-icon="fa fa-share" label="Group">
+									<option value="初中">初中</option>
+									<option value="高中">高中</option>
+									<option value="本科">本科</option>
+									<option value="研究生">研究生</option>
+								</optgroup>
+							</select>
+
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<font color="red">*</font>专业名称</td>
+						<td><input type="text" placeholder="请输入专业名称" id="txt4"></td>
+					</tr>
+				</table>
+				<center><input type="button" value="保存" size="20" style="background-color: black; color: white;font-family: '微软雅黑';" onclick="save()" />
+					<input type="button" value="取消" size="20" style="font-family: '微软雅黑';" onclick="undo()"/></center>
+			</form>
+
+		</div>
+	</body>
+
+</html>

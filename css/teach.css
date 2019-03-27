@@ -1,0 +1,54 @@
+#div3{
+	border: solid 1px gainsboro;
+	width: 200px;
+	height: 20px;
+	float: right;
+	margin-right: 200px;
+}
+
+#div1{
+	width: 300px;
+	height: 800px;
+	background-color: darkgrey;
+	float: left;
+}
+
+#div1 p{
+	padding-top: 50px;
+	margin-left: 100px;
+	font-weight: 1000;
+	font-family: "微软雅黑";
+	font-size: 25px;
+}
+
+#div2{
+	width: 800px;
+	margin-left: 200px;
+	;
+}
+
+table td{
+	font-family: "微软雅黑";
+}
+
+form{
+	padding-top: 50px;
+}
+
+#txt1{
+	height:25px;
+	width: 300px;
+}
+
+.txt2{
+	height: 25px;
+}
+
+.txt3{
+	height: 25px;
+}
+
+#txt4{
+	height: 25px;
+}
+
